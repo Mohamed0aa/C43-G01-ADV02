@@ -30,6 +30,17 @@ namespace Assignment
             //}
 
             #endregion
+
+            #region q2:
+            //List<int> num = new List<int>() { 1,2,3,4,5,6};
+
+            //List<int> EvenList = num.FindAll(x => x%2==0);
+
+            //foreach (int num2 in EvenList)
+            //{
+            //    Console.WriteLine(num2);
+            //}
+            #endregion
         }
     }
 }
