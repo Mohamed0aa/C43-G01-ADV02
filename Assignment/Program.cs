@@ -26,15 +26,15 @@ namespace Assignment
 
             for (int i = 0; i < q?.Length; i++)
             {
-                if (dic.ContainsKey(q[i])) { dic[q[i]]++;  }
+                if (dic.ContainsKey(q[i])) { dic[q[i]]++; }
                 else
-                {  dic.Add(q[i], 1); }
+                { dic.Add(q[i], 1); }
             }
             for (int i = 0; i < q?.Length; i++)
             {
                 if (dic[q[i]] == 1)
                 {
-                    
+
                     return i;
                 }
             }
@@ -81,7 +81,7 @@ namespace Assignment
 
             #endregion
 
-            #region q5:
+            #region q5:find num greater than q
             //int n, m;
             //int.TryParse(Console.ReadLine(), out n);
             //int.TryParse(Console.ReadLine(), out m);
@@ -102,8 +102,31 @@ namespace Assignment
             #endregion
 
 
+            #region q6
+            //int n;
+            //int.TryParse(Console.ReadLine(), out n);
+            //int[] num1 = new int[n];
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int.TryParse(Console.ReadLine(), out num1[i]);
+            //}
+            //int[] num2 = num1;
+            //num2.Reverse();
+            //for (int i = 0; i < n/2; i++)
+            //{
+            //    if (num1[i] != num2[n - i - 1])
+            //    {
+            //        Console.WriteLine("FALSE");
+            //        return;
+            //    }
+            //}
+            //Console.WriteLine("TRUE");
+                #endregion
 
 
+
+
+            
         }
     }
 }
