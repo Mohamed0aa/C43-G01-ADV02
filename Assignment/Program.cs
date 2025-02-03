@@ -81,6 +81,26 @@ namespace Assignment
 
             #endregion
 
+            #region q5:
+            //int n, m;
+            //int.TryParse(Console.ReadLine(), out n);
+            //int.TryParse(Console.ReadLine(), out m);
+            //int[] num= new int[n];
+            //for (int i = 0;i < n;i++)
+            //{
+            //    int.TryParse(Console.ReadLine(), out num[i]);
+            //}
+
+            //for(int i = 0;i<m;i++)
+            //{
+            //    int q;
+            //    int.TryParse(Console.ReadLine(), out q);
+
+            //    Console.WriteLine( num.Count(x => x > q));
+            //}
+
+            #endregion
+
 
 
 
