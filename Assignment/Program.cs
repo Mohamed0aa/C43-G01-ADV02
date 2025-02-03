@@ -41,6 +41,33 @@ namespace Assignment
             return -1;
         }
         #endregion
+
+        #region q7:RemoveDublicate
+        public static void RemoveDublicate(int[] numbers)
+        {
+            List<int> list = new List<int>();
+            Dictionary<int, int> dic = new Dictionary<int, int>();
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (dic.ContainsKey(numbers[i]) == false)
+                { list.Add(numbers[i]); dic.Add(numbers[i], 1); }
+            }
+
+            foreach (int i in list)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        #endregion
+
+        #region q8:remove_odd
+        public static void remove(List<int> list)
+        {
+            list.RemoveAll(x => x % 2 != 0);
+            
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region q1: You are given an ArrayList containing a sequence of elements Reverse It
@@ -124,14 +151,16 @@ namespace Assignment
             #endregion
 
             #region q7:
-
+            //int [] numbers= new int[] {1,2,2,3,4,4,5 };
+            //RemoveDublicate(numbers);
             #endregion
 
 
-            #region q:8
-            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            list.RemoveAll(x => x%2 != 0);
-            Console.WriteLine(list.Count);//4
+            #region q8:
+            //List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //remove(list);
+            //Console.WriteLine(list.Count);//4
+
             #endregion
 
 
