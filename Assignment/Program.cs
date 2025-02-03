@@ -102,7 +102,7 @@ namespace Assignment
             #endregion
 
 
-            #region q6
+            #region q6: cheeck palindrom
             //int n;
             //int.TryParse(Console.ReadLine(), out n);
             //int[] num1 = new int[n];
@@ -121,12 +121,23 @@ namespace Assignment
             //    }
             //}
             //Console.WriteLine("TRUE");
-                #endregion
+            #endregion
+
+            #region q7:
+
+            #endregion
+
+
+            #region q:8
+            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            list.RemoveAll(x => x%2 != 0);
+            Console.WriteLine(list.Count);//4
+            #endregion
 
 
 
 
-            
+
         }
     }
 }
