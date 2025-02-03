@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Assignment
 {
@@ -15,7 +16,30 @@ namespace Assignment
                 arrayList[n - i - 1] = temp;
                 if (i == n / 2) break;
             }
-        } 
+        }
+        #endregion
+
+        #region q4: FindUnique
+        public static int FindUnique(string? q)
+        {
+            Dictionary<char, int> dic = new Dictionary<char, int>();
+
+            for (int i = 0; i < q?.Length; i++)
+            {
+                if (dic.ContainsKey(q[i])) { dic[q[i]]++;  }
+                else
+                {  dic.Add(q[i], 1); }
+            }
+            for (int i = 0; i < q?.Length; i++)
+            {
+                if (dic[q[i]] == 1)
+                {
+                    
+                    return i;
+                }
+            }
+            return -1;
+        }
         #endregion
         static void Main(string[] args)
         {
@@ -51,9 +75,15 @@ namespace Assignment
             //fixedSizeList.Get(3);
             #endregion
 
-            
+            #region q4:Given a string, find the first non-repeated character in it and return its index
+            //string? q=Console.ReadLine();
+            //Console.WriteLine( FindUnique(q));//1 o
 
             #endregion
+
+
+
+
         }
     }
 }
