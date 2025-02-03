@@ -31,7 +31,7 @@ namespace Assignment
 
             #endregion
 
-            #region q2:
+            #region q2: Find Even numbers 
             //List<int> num = new List<int>() { 1,2,3,4,5,6};
 
             //List<int> EvenList = num.FindAll(x => x%2==0);
@@ -40,6 +40,19 @@ namespace Assignment
             //{
             //    Console.WriteLine(num2);
             //}
+            #endregion
+
+            #region q3:implement a custom list called FixedSizeList
+            //FixedSizeList<int> fixedSizeList = new FixedSizeList<int>();
+            //fixedSizeList.Addd(1);
+            //fixedSizeList.Addd(2);
+            //fixedSizeList.Addd(3);
+            //fixedSizeList.Addd(4);
+            //fixedSizeList.Get(3);
+            #endregion
+
+            
+
             #endregion
         }
     }
